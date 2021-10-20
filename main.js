@@ -15,3 +15,13 @@ function timSoChanLe() {
 document.getElementById("timSoChanLe").onclick = timSoChanLe;
 
 // Ex 02
+function demSoChiaHetCho3() {
+    var count = 0; // Biến đếm số
+    for (var i = 0; i < 1000; i++) {
+        if ((i%3) == 0) {
+            count+=1;
+        }
+    }
+    document.getElementById("soChiaHetCho3").value = "Số chia hết cho 3 nhỏ hơn 1000: " + count + " số";
+}
+document.getElementById("demSo").onclick = demSoChiaHetCho3;
