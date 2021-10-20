@@ -36,3 +36,15 @@ function timSoNhoNhat() {
     document.getElementById("soNhoNhat").value = "Số nguyên dương nhỏ nhất: " + (i - 1);
 }
 document.getElementById("timSoNhoNhat").onclick = timSoNhoNhat;
+
+// Ex 04
+function tinhTong() {
+    var soX = Number(document.getElementById("soX").value);
+    var soN = Number(document.getElementById("soN").value);
+    var sum = 0; // Biến tổng
+    for (var i = 1; i <= soN; i++) {
+        sum+= soX ** i;
+    }
+    document.getElementById("sum").value = "Tổng: " + sum;
+}
+document.getElementById("tinhTong").onclick = tinhTong;
