@@ -25,3 +25,14 @@ function demSoChiaHetCho3() {
     document.getElementById("soChiaHetCho3").value = "Số chia hết cho 3 nhỏ hơn 1000: " + count + " số";
 }
 document.getElementById("demSo").onclick = demSoChiaHetCho3;
+
+// Ex 03
+function timSoNhoNhat() {
+    var sum = 0;
+    var i = 0;
+    for (var i = 0; sum < 10000; i++) {
+       sum+= i;
+    }
+    document.getElementById("soNhoNhat").value = "Số nguyên dương nhỏ nhất: " + (i - 1);
+}
+document.getElementById("timSoNhoNhat").onclick = timSoNhoNhat;
