@@ -48,3 +48,14 @@ function tinhTong() {
     document.getElementById("sum").value = "Tổng: " + sum;
 }
 document.getElementById("tinhTong").onclick = tinhTong;
+
+// Ex 05
+function tinhGiaiThua() {
+    var soGiaiThua = Number(document.getElementById("soGiaiThua").value);
+    var ketQuaGiaiThua = 1;
+    for (var i = 1; i <= soGiaiThua; i++) {
+        ketQuaGiaiThua = ketQuaGiaiThua*= i;
+    }
+    document.getElementById("giaiThua").value = "Giai thừa: " + ketQuaGiaiThua;
+}
+document.getElementById("tinhGiaiThua").onclick = tinhGiaiThua;
