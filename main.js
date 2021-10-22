@@ -59,3 +59,17 @@ function tinhGiaiThua() {
     document.getElementById("giaiThua").value = "Giai thừa: " + ketQuaGiaiThua;
 }
 document.getElementById("tinhGiaiThua").onclick = tinhGiaiThua;
+
+// Ex 06
+function taoTheDiv() {
+    var theDiv = "";
+    for (var i = 1; i <= 10; i++) {
+        if ((i%2) != 0) {
+            theDiv+= "<div class='py-2 px-1 text-light bg-primary'>Div lẻ</div>";
+        } else {
+            theDiv+= "<div class='py-2 px-1 text-light bg-danger'>Div chẵn</div>";
+        }
+    }
+    document.getElementById("theDiv").innerHTML = theDiv;
+}
+document.getElementById("taoTheDiv").onclick = taoTheDiv;
