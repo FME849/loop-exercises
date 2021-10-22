@@ -73,3 +73,27 @@ function taoTheDiv() {
     document.getElementById("theDiv").innerHTML = theDiv;
 }
 document.getElementById("taoTheDiv").onclick = taoTheDiv;
+
+// Ex 07
+function inSoNguyenTo() {
+    var soN = Number(document.getElementById("soNBaiTap7").value);
+    var soNguyenTo = "";
+    for (var i = 2; i <= soN; i++) {
+        var canBacHai = Math.floor(Math.sqrt(i));
+        if (canBacHai <= 1) {
+            soNguyenTo+= i + " ";
+        } else{
+            for (j = 2; j <= canBacHai; j++) {
+                if ((i%j) == 0) {
+                    break;
+                } else if (j == canBacHai && (i%j) != 0) {
+                    soNguyenTo+= i + " "; 
+                } else {
+                    continue;
+                }
+            }
+        }
+    }
+    document.getElementById("soNguyenTo").innerHTML = soNguyenTo;
+}
+document.getElementById("inSoNguyenTo").onclick = inSoNguyenTo;
